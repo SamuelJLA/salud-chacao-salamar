@@ -12,11 +12,6 @@ export const Header = () => {
             className="h-12 sm:h-16 w-auto object-contain"
           />
         </div>
-
-        {/* Badge de Alianza */}
-        <span className="text-[10px] sm:text-xs font-semibold bg-blue-50 text-chacao-700 px-3 py-1 rounded-full border border-blue-100 shrink-0">
-          Atención Unificada
-        </span>
       </div>
     </header>
   );
