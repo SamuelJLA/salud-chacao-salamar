@@ -5,7 +5,7 @@ export const UnitSwitch = ({ activeUnit, setActiveUnit }) => {
   const options = [
     { id: 'all', label: 'Todos', icon: LayoutGrid },
     { id: 'laboratorio', label: 'Laboratorio Chacao', icon: TestTube },
-    { id: 'clinica', label: 'Clínica Salamar', icon: Stethoscope },
+    { id: 'clinica', label: 'C.D. Salamar', icon: Stethoscope },
   ];
 
   return (
