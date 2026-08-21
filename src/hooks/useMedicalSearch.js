@@ -46,10 +46,11 @@ export const useMedicalSearch = () => {
 
       const query = searchQuery.toLowerCase().trim();
       const matchesQuery =
-        query === '' ||
-        item.name.toLowerCase().includes(query) ||
-        (item.code && item.code.toLowerCase().includes(query)) ||
-        item.category.toLowerCase().includes(query);
+      query === '' ||
+      item.name.toLowerCase().includes(query) ||
+      (item.code && item.code.toLowerCase().includes(query)) ||
+      item.category.toLowerCase().includes(query) ||
+      (item.tags && item.tags.toLowerCase().includes(query));
 
       return matchesUnit && matchesCategory && matchesQuery;
     });
